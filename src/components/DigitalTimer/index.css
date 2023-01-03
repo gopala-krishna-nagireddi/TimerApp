@@ -1,0 +1,148 @@
+/* Write your CSS here */
+
+body {
+  font-family: 'Roboto';
+}
+
+.bg-container {
+  background-image: linear-gradient(to bottom, #ffffff, #cffcf1);
+  min-height: 100vh;
+
+  padding: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .bg-container {
+    background-image: linear-gradient(to right, #ffffff, #cffcf1);
+  }
+}
+
+.heading {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.timer-img-bg-container {
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-bg-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-size: cover;
+  height: 350px;
+  width: 350px;
+  position: relative;
+}
+
+.timer-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.timer {
+  margin: 0;
+  color: #00d9f5;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.timer-controller-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .timer-controller-container {
+    margin-left: 40px;
+  }
+}
+
+.controller-container {
+  display: flex;
+}
+
+.play-pause-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  width: 120px;
+}
+
+.reset-container {
+  display: flex;
+  align-items: center;
+}
+
+.control-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.play-pause {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.controller-img {
+  width: 25px;
+  margin-right: 5px;
+}
+
+.controller {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.timer-controller {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.count-decrement,
+.count-increment {
+  font-size: 30px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.count {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-size: cover;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px 20px;
+  margin: 0;
+}
+
+.info {
+  font-size: 20px;
+  font-weight: bold;
+}
